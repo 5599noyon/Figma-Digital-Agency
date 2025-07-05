@@ -79,10 +79,7 @@ button {
 }
 
 .transform {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     gap: 24px;
+     align-items: start;
 }
 
 .digital_play {
@@ -179,19 +176,84 @@ background-clip: text;
 
 .transform_left {
      position: relative;
+      /* height: 639px; */
 }
 
 .transform_left .move {
      position: absolute;  
-     animation: move 3s linear alternate infinite ;
+     animation: move 500s linear alternate infinite ;
      top: 0;
      left: 0;
 }
 
 @keyframes move {
-     0% {}
-     50% {}
-     100% {}
+     0% {
+          transform: rotate(0deg) scale(1);
+     }
+     50% {
+          transform: rotate(3000deg) scale(0.7);
+     }
+     100% {
+          transform: rotate(0deg) scale(1);
+     }
 }
 
 /* Section One End */
+
+/* Section Two start */
+
+/* section top start */
+
+.section_two_container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 72px;
+     padding-top: 112px;
+     padding-bottom: 128px;
+}
+
+.creative_solutions {
+display: flex;
+align-items: center;
+gap: 72px;
+}
+
+.award_winning {
+display: flex;
+align-items: center;
+gap: 72px;
+}
+
+.team_of_professionals {
+display: flex;
+align-items: center;
+gap: 72px;
+}
+
+.two_work {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.two_h3 h3 {
+     font-size: 24px;
+     line-height: 1.4;
+     font-weight: 800;
+     color: var(--gray900);
+     padding-top: 24px;
+}
+
+.two_h3 p {
+     font-size: 16px;
+     line-height: 1.6;
+     font-weight: 400;
+     color: var(--gray700);
+     padding-top: 12px;
+}
+
+/* section top End */
+
+
+/*  Section Two End */
