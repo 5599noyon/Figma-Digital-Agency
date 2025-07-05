@@ -1,0 +1,197 @@
+* {
+     font-family: "Manrope", sans-serif ;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+     padding: 0;
+     margin: 0;
+}
+
+button {
+     white-space: nowrap;
+}
+
+:root {
+     --font-family: "Manrope", sans-serif;
+     --gray500:#B4B7C9;
+     --white:#FFFFFF;
+     --gray88:#33354D;
+     --gray900:#0B0F19;
+     --primary:#6366F1;
+     --linear: linear-gradient(#6366F1, #8B5CF6,#D946EF);
+     --gray700:#565973;
+     --gray300:#E2E5F1;
+     --gray600:#9397AD;
+     --gray100:#F3F6FF;
+}
+
+.container {
+     width: 1300px !important; 
+}
+
+/* Nav Work Start */
+
+#navbar {
+     background: url(../images/nav_background.svg);
+     width: 100%;
+}
+
+.nav_manu ul li a {
+     font-weight: 16px;
+     line-height: 160%;
+     cursor: pointer;
+}
+
+.checkbox_icon {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 8px;
+}
+
+.checkbox_work {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 52px;
+}
+
+.checkbox_button button {
+     padding: 9px 20px;
+     border-radius: 8px;
+     line-height: 18px;
+     border: none;
+     color: #FFFFFF;
+     background: #6366F1;
+}
+
+/*  Nav Work End */
+
+/* Section One Start */
+
+#section_one {
+     padding-top: 143px; 
+     padding-bottom: 96px;
+     background: url(../images/nav_background.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.transform {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 24px;
+}
+
+.digital_play {
+     display: flex;
+     align-items: center;
+     gap: 16px;
+     margin-bottom: 16px;
+}
+
+.digital_button {
+     width: 52px;
+     height: 52px;
+     border-radius: 50%;
+     background: #FFFFFF;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+}
+
+.reality_text {
+     padding-bottom: 64px;
+}
+
+.digital_text h4 {
+     font-size: 24px;
+     line-height: 140%;
+     font-weight: bold;
+     color: #33354D;
+}
+
+.reality_text h1 {
+     font-size: 72px;
+     line-height: 130%;
+     font-weight: 800;
+}
+
+.reality_text h1 span {
+     background: linear-gradient(90deg, #6366F1 0%, #8B5CF6 50%, #D946EF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.Work_with {
+     display: flex;
+     align-items: start;
+     justify-content: space-between;
+     gap: 40px;
+}
+
+.Work_button button {
+     padding: 9px 25px;
+     border: none;
+     background: var(--primary);
+     color: var(--white);
+     font-size: 16px;
+     line-height: 160%;
+     text-align: center;
+     cursor: pointer;
+     white-space: nowrap ;
+     border-radius: 8px;
+}
+
+.Work_p h6 {
+     font-size: 16px;
+     font-weight: 1.6;
+     color: var(--gray700);
+}
+
+.discover_button {
+     display: flex;
+     align-items: center;
+     gap: 16px;
+     margin-top: 195px;
+}
+
+.discover_icon {
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     background: #FFFFFF;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+}
+
+.discover_text h6 {
+     font-size: 14px;
+     line-height: 160%;
+     color: #565973;
+}
+
+.transform_left {
+     position: relative;
+}
+
+.transform_left .move {
+     position: absolute;  
+     animation: move 3s linear alternate infinite ;
+     top: 0;
+     left: 0;
+}
+
+@keyframes move {
+     0% {}
+     50% {}
+     100% {}
+}
+
+/* Section One End */
