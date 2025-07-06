@@ -1,12 +1,42 @@
 @media (max-width:991.98px) {
 
-     .reality_text h1 {
-    font-size: 32px;
-    min-width: 100%;
+  .digital_play {
+   width: 326px;
+}
+
+  .reality_text h1 {
+    font-size: 100px;
+}
+
+#section_one {
+    padding-top: 100px;
+    background: 100%;
+    background-image: url(../images/nav_background.svg);
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 1305px;
+}
+
+#navbar {
+    height: 180px;
+    min-width: 248%;
+}
+
+  .Work_button button {
+    padding: 30px 90px;
+    font-size: 25px;
+
 }
 
 .Work_p h6 {
-  min-width: 100%;
+    font-size: 35px;
+    min-width: 670px;
+}
+
+.transform_left {
+  margin-bottom: 1238px;
+  z-index: 100;
 }
 
 }

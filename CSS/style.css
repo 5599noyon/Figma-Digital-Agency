@@ -1,8 +1,14 @@
 * {
-     font-family: "Manrope", sans-serif ;
+     font-family: "Manrope", sans-serif;
 }
 
-p,h1,h2,h3,h4,h5,h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
      padding: 0;
      margin: 0;
 }
@@ -13,20 +19,20 @@ button {
 
 :root {
      --font-family: "Manrope", sans-serif;
-     --gray500:#B4B7C9;
-     --white:#FFFFFF;
-     --gray88:#33354D;
-     --gray900:#0B0F19;
-     --primary:#6366F1;
-     --linear: linear-gradient(#6366F1, #8B5CF6,#D946EF);
-     --gray700:#565973;
-     --gray300:#E2E5F1;
-     --gray600:#9397AD;
-     --gray100:#F3F6FF;
+     --gray500: #B4B7C9;
+     --white: #FFFFFF;
+     --gray800: #33354D;
+     --gray900: #0B0F19;
+     --primary: #6366F1;
+     --linear: linear-gradient(#6366F1, #8B5CF6, #D946EF);
+     --gray700: #565973;
+     --gray300: #E2E5F1;
+     --gray600: #9397AD;
+     --gray100: #F3F6FF;
 }
 
 .container {
-     width: 1300px !important; 
+     width: 1300px !important;
 }
 
 /* Nav Work Start */
@@ -70,7 +76,7 @@ button {
 /* Section One Start */
 
 #section_one {
-     padding-top: 143px; 
+     padding-top: 143px;
      padding-bottom: 96px;
      background: url(../images/nav_background.svg);
      background-position: center;
@@ -119,9 +125,9 @@ button {
 
 .reality_text h1 span {
      background: linear-gradient(90deg, #6366F1 0%, #8B5CF6 50%, #D946EF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
 }
 
 .Work_with {
@@ -140,7 +146,7 @@ background-clip: text;
      line-height: 160%;
      text-align: center;
      cursor: pointer;
-     white-space: nowrap ;
+     white-space: nowrap;
      border-radius: 8px;
 }
 
@@ -148,6 +154,7 @@ background-clip: text;
      font-size: 16px;
      font-weight: 1.6;
      color: var(--gray700);
+     min-width: 443px;
 }
 
 .discover_button {
@@ -176,12 +183,11 @@ background-clip: text;
 
 .transform_left {
      position: relative;
-      /* height: 639px; */
 }
 
 .transform_left .move {
-     position: absolute;  
-     animation: move 500s linear alternate infinite ;
+     position: absolute;
+     animation: move 500s linear alternate infinite;
      top: 0;
      left: 0;
 }
@@ -190,9 +196,11 @@ background-clip: text;
      0% {
           transform: rotate(0deg) scale(1);
      }
+
      50% {
-          transform: rotate(3000deg) scale(0.7);
+          transform: rotate(3000deg) scale(1);
      }
+
      100% {
           transform: rotate(0deg) scale(1);
      }
@@ -210,31 +218,42 @@ background-clip: text;
      justify-content: space-between;
      gap: 72px;
      padding-top: 112px;
-     padding-bottom: 128px;
 }
 
 .creative_solutions {
-display: flex;
-align-items: center;
-gap: 72px;
+     display: flex;
+     align-items: center;
+     gap: 72px;
 }
 
 .award_winning {
-display: flex;
-align-items: center;
-gap: 72px;
+     display: flex;
+     align-items: center;
+     gap: 72px;
 }
 
 .team_of_professionals {
-display: flex;
-align-items: center;
-gap: 72px;
+     display: flex;
+     align-items: center;
+     gap: 72px;
 }
 
 .two_work {
      display: flex;
      flex-direction: column;
      align-items: center;
+}
+
+.two_p p {
+     font-size: 16px;
+     line-height: 1.6;
+     font-weight: 400;
+     color: var(--gray700);
+}
+
+.two_p p span {
+     display: block;
+     text-align: center;
 }
 
 .two_h3 h3 {
@@ -255,5 +274,314 @@ gap: 72px;
 
 /* section top End */
 
+/* section down start */
+
+.featured_container {
+      margin-top: 128px;
+}
+
+.featured_text {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.featured_h3 h3 {
+     font-size: 40px;
+     line-height: 1.3;
+     color: var(--gray900);
+     font-weight: 800;
+     padding-bottom: 24px;
+}
+
+.featured_p p {
+     font-size: 18px;
+     line-height: 1.6;
+     font-weight: 400;
+     padding-bottom: 40px;
+     color: var(--gray600);
+     min-width: 400px;
+}
+
+.featured_p p span {
+     display: block;
+     text-align: center;
+}
+
+.featured_images {
+     display: grid;
+     grid-template-columns: auto auto auto;
+     align-items: start;
+}
+
+.featured_img4 img {
+     transform: translate(424px, -420px);
+     margin-bottom: -387px;
+}
+
+.featured_button {
+     padding: 13px 32px;
+     background: var(--primary);
+     border: none;
+     color: #FFFFFF;
+     border-radius: 8px;
+     font-size: 16px;
+     line-height: 1.6;
+     font-weight: 600;
+     margin-bottom: 96px;
+     margin-left: 50%;
+}
+
+.featured_button:hover {
+     transform: scale(1.1);
+     background: #8B5CF6;
+     color: #0B0F19;
+}
+
+/* section down end */
 
 /*  Section Two End */
+
+/* Section Three Start  */
+
+/* Section Three End  */
+
+/* Section Four Start  */
+
+/* Trusted by Awesome Clients Work Start */
+
+.trusted_text {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.trusted_h3 h3 {
+     font-size: 32px;
+     line-height: 1.3;
+     font-weight: 800;
+     color: var(--gray900);
+}
+
+.trusted_chavron {
+     display: flex;
+     align-items: center;
+     gap: 16px;
+}
+
+.trusted_button_work {
+     display: flex;
+     align-items: center;
+     gap: 24px;
+     padding-top: 40px;
+     margin-bottom: 112px;
+}
+
+.trusted_button_work button:hover {
+     background: var(--linear);
+     font-weight: bolder;
+     transition: all linear .10s;
+}
+
+.trusted_button1 button {
+     padding: 35px 39px !important; 
+     background: var(--white);
+     border: 1px solid var(--gray300);
+     border-radius: 8px;
+}
+
+.trusted_button2 button {
+     padding: 35px 28px !important; 
+     background: var(--white);
+     border: 1px solid var(--gray300);
+     border-radius: 8px;
+}
+
+.trusted_button3 button {
+     padding: 40px 22px !important; 
+     background: var(--white);
+     border: 1px solid var(--gray300);
+     border-radius: 8px;
+}
+
+.trusted_button4 button {
+     padding: 33px 31px !important; 
+     background: var(--white);
+     border: 1px solid var(--gray300);
+     border-radius: 8px;
+}
+
+.trusted_button5 button {
+     padding: 34px 36px !important; 
+     background: var(--white);
+     border: 1px solid var(--gray300);
+     border-radius: 8px;
+}
+
+.trusted_button6 button {
+     padding: 33px 32px !important; 
+     background: var(--white);
+     border: 1px solid var(--gray300);
+     border-radius: 8px;
+}
+
+/* Trusted by Awesome Clients Work End */
+
+/* What They Say About Us Work Start */
+
+.head_of_marketing {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.about_us_top h2 {
+     font-size: 40px;
+     line-height: 1.3;
+     font-weight: 800;
+     color: #0B0F19;
+     margin-bottom: 48px;
+}
+
+.about_us_center {
+     display: flex;
+     align-items: center;
+     gap: 72px;
+}
+
+.about_us_end {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 676px;
+     margin-bottom: 138px;
+}
+
+.about_us_ceo_buttom {
+     display: flex;
+     align-items: center;
+     gap: 24px;
+     margin-top: 32px;
+}
+
+.about_us_txt {
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     gap: 26px;
+     width: 808px;
+     height: 346px ;
+     border: 2px solid var(--white);
+     box-shadow: 0px 0px 20px 9px #FFFFFF;
+}
+
+.about_us_p p {
+     color: var(--gray700);
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 1.6;
+     max-width: 693px;
+}
+
+.about_us_opt img {
+     transform: translateX(-38px);
+}
+
+.about_us_name h5 {
+     font-size: 20px ;
+     line-height: 1.4;
+     font-weight: 800;
+     color: var(--gray900);
+}
+
+.about_us_name p {
+     font-size: 14px;
+     line-height: 1.6;
+     font-weight: 400;
+     color: var(--gray600);
+}
+
+/* What They Say About Us Work End */
+
+/* Our Creative Atmosphere Work Start */
+
+.atmosphere {
+     display: flex;
+     flex-direction: column;
+     gap: 18px;
+     margin-bottom: 96px;
+}
+
+.atmosphere_text_work {
+     display: flex;
+     gap: 28px;
+}
+
+.atmosphere_text h3 {
+     font-size: 40px;
+     font-weight: 800;
+     line-height: 130%;
+     color: var(--gray900);
+}
+
+/* Our Creative Atmosphere Work End */
+
+/* Award-winning designs featured by work start */
+
+.award_winning {
+     display: flex;
+     align-items: center;
+     gap: 100px;
+}
+
+.award_winning_txt {
+     margin-bottom: 112px;
+}
+
+.award_winning_txt h3 {
+     font-size: 32px;
+     line-height: 1.3;
+     font-weight: 800;
+}
+
+.award_winning_icon {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 16px;
+}
+
+.award_winning_p {
+     margin-bottom: 112px;
+}
+
+.award_winning_p p {
+     font-size: 14px;
+     line-height: 1.6;
+     font-weight: 400;
+     color: var(--gray700);
+     cursor: pointer;
+}
+
+.award_winning_p p:hover {
+      background: linear-gradient(90deg, #6366F1 0%, #8B5CF6 50%, #D946EF 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+}
+
+.award_winning_p .award_1 {
+     min-width: 130px;
+}
+
+.award_winning_p .award_3 {
+     min-width: 136px;
+}
+
+.award_winning_p .award_4 {
+     min-width: 102px;
+}
+
+/* Award-winning designs featured by work end */
+
+/* Section Four End  */
