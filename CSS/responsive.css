@@ -19,8 +19,7 @@
 }
 
 #navbar {
-    height: 180px;
-    min-width: 248%;
+    width: fit-content;
 }
 
   .Work_button button {
@@ -37,6 +36,10 @@
 .transform_left {
   margin-bottom: 1238px;
   z-index: 100;
+}
+
+.featured_images .image {
+     margin-top: 24px;
 }
 
 }
