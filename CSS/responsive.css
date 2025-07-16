@@ -18,6 +18,20 @@
      width: 1305px;
 }
 
+#blog {
+    padding-top: 100px;
+    background: 100%;
+    background-image: url(../images/nav_background.svg);
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 1305px;
+}
+
+.blog_card_text {
+  margin-top: 10px;
+}
+
 #navbar {
     width: fit-content;
 }
