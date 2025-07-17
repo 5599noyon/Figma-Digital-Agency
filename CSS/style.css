@@ -863,9 +863,6 @@ button {
     grid-template-columns: 306px 1fr;
 }
 
-
-.right_layout .image {}
-
 .right_layout .image img {
     width: 100%;
     height: 100%;
@@ -1067,6 +1064,11 @@ footer .footer_right div ul:last-child{
      line-height: 1.6 !important;
      font-weight: 400 !important;
      color: var(--gray-600) !important;
+}
+
+input:focus-visible {
+    outline: none;
+    box-shadow: none;
 }
 
   /* Section Six End */
