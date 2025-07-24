@@ -605,11 +605,11 @@ button {
 }
 
 .about_us_end {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     gap: 676px;
-     margin-bottom: 138px;
+     display: flex !important;
+     align-items: center !important;
+     justify-content: center !important;
+     gap: 676px !important;
+     margin-bottom: 138px !important;
 }
 
 .about_us_ceo_buttom {
@@ -995,9 +995,9 @@ button {
 
 /* Section Six Start */
 
-footer {
-     padding-top: 228px;
-     padding-bottom: 64px;
+footer#footer {
+     margin-top: 215px;
+     margin-bottom: 64px;
 }
 
 footer p {
@@ -1089,7 +1089,7 @@ input:focus-visible {
 /* Section Seven Start */
 
 #section_seven {
-     background:var(--gray100);
+     background: var(--gray100);
      height: 1545px;
 }
 
@@ -1100,6 +1100,17 @@ input:focus-visible {
      gap: 16.36px;
      padding-bottom: 32px;
      padding-top: 40px;
+}
+
+.homepage,
+.ser_icon,
+.ser_txt {
+     cursor: pointer;
+}
+
+.homepage:hover {
+     color: #6366F1;
+     transition: all linear 0.06s;
 }
 
 .homepage {
@@ -1129,23 +1140,27 @@ input:focus-visible {
 }
 
 .services_clients {
-     margin-top: 112px;
+     position: absolute;
+     transform: translateY(-230px);
      padding-bottom: 72px;
 }
 
 .services_icon {
-    width: 52px;
-    height: 52px;
-    border-radius: 8px;
-    position: absolute;
-    top: -20px;
-    left: 48px;
-    height: 80px;
-    width: 80px;
-    background: var(--primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+     position: absolute;
+     border-radius: 8px;
+     top: -20px;
+     left: 48px;
+     height: 80px;
+     width: 80px;
+     background: var(--primary);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.col-lg-6 {
+     flex: 0 auto;
+     width: 50%;
 }
 
 .services_txt {
@@ -1221,8 +1236,8 @@ input:focus-visible {
      margin-top: 32px;
 }
 
-.about_us_end {
-     display: inline;
+.services_end {
+     display: inline !important;
      margin-top: 40px;
 }
 
@@ -1231,6 +1246,7 @@ input:focus-visible {
      flex-direction: column;
      align-items: center;
      gap: 24px;
+     padding-top: 330px;
      padding-bottom: 112px;
 }
 
@@ -1272,10 +1288,10 @@ input:focus-visible {
 .why_p p {
      text-align: center;
      min-width: 282px;
-     font-size:20px ;
-     font-weight:800 ;
-     line-height:1.4 ;
-     color:var(--gray900) ;
+     font-size: 20px;
+     font-weight: 800;
+     line-height: 1.4;
+     color: var(--gray900);
      padding-top: 24px;
      padding-bottom: 40px;
 }
@@ -1285,9 +1301,152 @@ input:focus-visible {
      margin-left: 24px;
 }
 
-#footer_1 {
-     padding-top: 24px;
+footer#footer_1 {
+    margin-top: 96px;
+    margin-bottom: 64px;
 }
 
 /* Section Seven End */
 
+/* Section Eight Start */
+
+.eight_container {
+     background: var(--gray100);
+     border-radius: 8px;
+     padding: 72px 0 72px;
+}
+
+.touch_work1 h2 {
+     font-size: 40px;
+     line-height: 1.3;
+     font-weight: 800;
+     color: #0B0F19;
+}
+
+.touch_work1 p {
+     font-size: 16px;
+     line-height: 1.6;
+     font-weight: 400;
+     color: var(--gray700);
+     padding-top: 24px;
+     max-width: 395px;
+}
+
+.touch_work1 h3 {
+     font-size: 28px;
+     line-height: 1.3;
+     font-weight: var(--gray900);
+     color: #0B0F19;
+     margin-top: 72px;
+     margin-bottom: 24px;
+}
+
+.contact_info_div .contact_info {
+     display: flex;
+     align-items: center;
+     margin-bottom: 8px;
+     gap: 10px;
+}
+
+.contact_text p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 600;
+    color: var(--gray800);
+    padding-top: 0;
+}
+
+.contact_madia {
+     display: flex;
+     align-items: center;
+}
+
+.contact_madia {
+     display: flex;
+     gap: 16px;
+     margin-top: 72px;
+}
+
+.contact_madia_imges {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 8px;
+     height: 44px;
+     width: 44px;
+     background: var(--gray300);
+}
+
+.contact_madia_imge {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 8px;
+     height: 44px;
+     width: 44px;
+     background: var(--primary);
+}
+
+.get_touch {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin: 0 auto;
+}
+
+.touch_work2 {
+     padding: 32px 32px;
+     background-color: var(--white);
+     box-shadow: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06), 
+     0 2px 6px -1px rgba(19, 16, 34, 0.03) !important;
+     border-radius: 8px;
+}
+
+.touch_1 {
+     margin-bottom: 24px;
+}
+
+.form-select {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--gray600);
+}
+
+.touch_work2 span {
+color: #6366F1;
+}
+
+.form-select:focus {
+     border-color: var(--gray400);
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: var(--gray400);
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-input:focus {
+    border-color: var(--gray400);
+    outline: 0;
+    box-shadow: none;
+}
+
+.touch_work2 button {
+     padding:13px 32px;
+     background: #6366F1;
+     color: var(--white);
+     border-radius: 8px;
+     border: none;
+     font-size: 16px;
+     line-height: 1.6;
+     font-weight: 600;
+     margin-top: 32px;
+}
+
+/* Section Eight End */
